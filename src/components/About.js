@@ -1,69 +1,87 @@
 import React from "react";
+import { Bounce, Slide, LightSpeed } from "react-reveal";
 
 function About() {
   return (
     <div className="About__container" id="About">
-      <h1 className="About__title">About Us</h1>
+      {/* Bounce */}
+      <Bounce>
+        <h1 className="About__title">About Us</h1>
+      </Bounce>
       <div className="flex justify-center items-start">
-        <p className="About__description">
-          Make your dream home a reality using our advanced building
-          technologies. Customize and everything visualize all from a digital
-          display. There are no limitations with AI.
-        </p>
+        {/* Slide */}
+        <Slide left>
+          <p className="About__description">
+            Make your dream home a reality using our advanced building
+            technologies. Customize and everything visualize all from a digital
+            display. There are no limitations with AI.
+          </p>
+        </Slide>
       </div>
-      <div className="About__cards">
-        <div className="About__card">
-          <div className="About__card__image">
-            <img
-              src={"/building.png"}
-              alt="AI"
-              className="About__card__image__img"
-            />
+      {/* LightSpeed */}
+      <LightSpeed right cascade>
+        <div className="About__cards">
+          <div className="About__card">
+            <div className="About__card__image">
+              <img
+                src={"/building.png"}
+                alt="AI"
+                className="About__card__image__img"
+              />
+            </div>
+            <div className="About__card__content">
+              <h1 className="About__card__content__title">Best Architecture</h1>
+              <p className="About__card__content__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptas, quod, quia, voluptates quae voluptatibus
+                quidem exercitationem quos voluptatum quibusdam quas. Quisquam,
+                quae
+              </p>
+            </div>
           </div>
-          <div className="About__card__content">
-            <h1 className="About__card__content__title">Best Architecture</h1>
-            <p className="About__card__content__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptas, quod, quia, voluptates quae voluptatibus quidem
-              exercitationem quos voluptatum quibusdam quas. Quisquam, quae
-            </p>
+          <div className="About__card">
+            <LightSpeed>
+              <div className="About__card__image">
+                <img
+                  src={"/building.png"}
+                  alt="AI"
+                  className="About__card__image__img"
+                />
+              </div>
+              <div className="About__card__content">
+                <h1 className="About__card__content__title">
+                  World Wide Network
+                </h1>
+                <p className="About__card__content__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam voluptas, quod, quia, voluptates quae voluptatibus
+                  quidem exercitationem quos voluptatum quibusdam quas.
+                  Quisquam, quae
+                </p>
+              </div>
+            </LightSpeed>
+          </div>
+          <div className="About__card">
+            <div className="About__card__image">
+              <img
+                src={"/building.png"}
+                alt="AI"
+                className="About__card__image__img"
+              />
+            </div>
+            <div className="About__card__content">
+              <h1 className="About__card__content__title">Professional Team</h1>
+              <p className="About__card__content__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam voluptas, quod, quia, voluptates quae voluptatibus
+                quidem exercitationem quos voluptatum quibusdam quas. Quisquam,
+                quae
+              </p>
+            </div>
           </div>
         </div>
-        <div className="About__card">
-          <div className="About__card__image">
-            <img
-              src={"/building.png"}
-              alt="AI"
-              className="About__card__image__img"
-            />
-          </div>
-          <div className="About__card__content">
-            <h1 className="About__card__content__title">World Wide Network</h1>
-            <p className="About__card__content__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptas, quod, quia, voluptates quae voluptatibus quidem
-              exercitationem quos voluptatum quibusdam quas. Quisquam, quae
-            </p>
-          </div>
-        </div>
-        <div className="About__card">
-          <div className="About__card__image">
-            <img
-              src={"/building.png"}
-              alt="AI"
-              className="About__card__image__img"
-            />
-          </div>
-          <div className="About__card__content">
-            <h1 className="About__card__content__title">Professional Team</h1>
-            <p className="About__card__content__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptas, quod, quia, voluptates quae voluptatibus quidem
-              exercitationem quos voluptatum quibusdam quas. Quisquam, quae
-            </p>
-          </div>
-        </div>
-      </div>
+      </LightSpeed>
+
       {/* Read more section */}
       <div className="About__ReadMore">
         <div className="About__ReadMore__Img">
